@@ -1,0 +1,177 @@
+header{
+    background-image: url("clouds.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100% ;
+    width: 98%;
+    margin:0 1%;
+}
+.nav-link{
+    color: white;
+    padding-bottom: 1vh;
+    margin: 1vh 2vh;
+    text-transform: uppercase;
+    font-size: medium;
+    opacity: 0.8;
+    border-bottom: thin solid transparent;
+    font-weight: bold;
+    
+}
+.nav-link:hover{
+    color: white;
+    border-bottom: thin solid white;
+    opacity: 1;
+}
+.title{
+    display: block;
+    font-family:serif;
+    font-size: 10vh;
+    color: white;
+    text-align: center;
+    font-family: 'Birthstone Bounce', cursive;
+    text-transform: capitalize;
+}
+#changable_text{
+    text-transform: uppercase;
+}
+#changable_text::after{
+    content: " ";
+    border-left: 3px solid #aebcb9;
+    margin: 0 1vh;
+    height: 100%;
+    padding:  0 100%;
+    left: 0px;
+}
+.change_text{
+    font-size: 4vh;
+    color: white;
+    text-align: center;
+}
+.item:first-child{
+    text-align: center;
+}
+.btn-center{
+    text-transform: uppercase;
+    width: 26vh;
+    text-align: center;
+    margin-top: 5vh;
+    padding: 1.8vh 0;
+    border:thin solid white;   
+    border-radius: 10vh;
+    color: white;
+}
+.btn-center:first-child{
+    border: none;
+}
+.btn-center:first-child:hover{
+    background: none    ;
+}
+.btn-center:hover{
+    background-color: white;
+    color: #40b0bd;
+}
+.btn-center>a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.bi{
+    font-size: xx-large;
+}
+.Social{
+    display: flex;
+    justify-content: space-around;
+}
+#about-me h1{
+    font-weight: 100;
+    opacity: 0.7;
+    font-size: 10vh;
+}
+#about-me>p>a{
+    text-decoration: none;
+    color: inherit;
+    border-bottom: thin solid rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+}
+#about-me>p>a:hover{
+    border-bottom: thin solid rgba(7, 66, 83, 0.6);
+    
+}
+#about-me>p{
+    font-size: 20px;
+    opacity: 0.8;
+    font-weight: 500;
+}
+.col-12>h5{
+    font-size: 35px;
+    color: #40b0bd;
+}
+.col-12>b{
+    text-transform: capitalize;
+    opacity: 0.8;
+}
+.slide{
+    background-color: violet;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide>.carousel-inner>.carousel-item>img{
+    height: 15%;
+    width: 15%;
+    border-radius: 100%;
+}
+#coffeewithme>h1{
+    font-size: 6vh;
+    font-weight: lighter;
+}
+#input>.inputbar>input{
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    background-color: #e5e5e5;
+    border: none;
+    font-size: 4vh;
+    padding-left: 2vh;
+    padding-top: 2vh ;
+    padding-bottom: 2vh ;
+}
+#input>.inputbar>input:focus{
+    outline: none;
+}
+#input>.inputbar>.bi{
+position: absolute;
+font-weight:2vh;
+right: 3vh;
+bottom: 6vh;
+color: rgba(0, 0, 0, 0.5);
+}
+#input>.inputbar>.bi:hover{
+    color: rgba(0, 0, 0, 0.8);
+}
+#input>label{
+    font-size: 4vh;
+    font-weight: 500;
+    opacity: 0.8;
+    text-transform: capitalize;
+}
+#progress{
+    background-color: rgba(0, 0, 0, 0.3) ;
+}
+#index{
+ font-weight: bolder;   
+ opacity: 0.8;
+ float: right;
+}
+#inputlable{
+    margin-left: 1vh;
+}
+
+.footerSocail>a>.bi{
+    padding: 0 1vh;
+}
+.footerSocail>a{
+    text-decoration: none;
+}
+
