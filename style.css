@@ -75,7 +75,6 @@ header{
     text-decoration: none;
     color: inherit;
 }
-
 .bi{
     font-size: xx-large;
 }
@@ -190,11 +189,12 @@ body { font-family: sans-serif; }
 
 .carousel-cell {
   width: 66%;
-  height: 80vh;
+  height: 75vh;
   margin-right: 10px;
-  background: #303030;
+  background: #40b0bd;
   border-radius: 5px;
   color: white;
+  font-family: cursive;
 }
 
 /* cell number */
@@ -204,7 +204,13 @@ body { font-family: sans-serif; }
   line-height: 200px;
   font-size: 80px;
   color: white;
+
 }
 .carousel-cell > h1{
     margin-top: 2vh;
+    text-transform: capitalize;
+}
+
+.carousel-cell>a>img{
+    height: 80%;
 }
