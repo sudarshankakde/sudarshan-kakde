@@ -175,3 +175,36 @@ color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
 
+
+
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 80vh;
+  margin-right: 10px;
+  background: #303030;
+  border-radius: 5px;
+  color: white;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.carousel-cell > h1{
+    margin-top: 2vh;
+}
