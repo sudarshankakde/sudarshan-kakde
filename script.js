@@ -5,20 +5,23 @@ var i = 0;
 var j = 0;
 function change_text() {
     if (i == 0) {
-        text.innerHTML = "programer.";
+        text.innerHTML = "a programer.";
         i++;
     }
     else if (i == 1) {
-        text.innerHTML = "student.";
-		text.Style.fade
+        text.innerHTML = "a student.";
         i++;
     }
     else if (i == 2) {
         text.innerHTML = "a proud indian.";
         i++;
     }
-    else if (i == 3) {
-        text.innerHTML = "WEB DEvloper.";
+	 else if (i == 3) {
+        text.innerHTML = "a Influencer.";
+        i++;
+    }
+    else if (i == 4) {
+        text.innerHTML = "a WEB DEvloper.";
         i = 0;
     }
 }
@@ -67,7 +70,7 @@ var picindex = document.getElementById('pic-index');
 var index=1;
 function nextPic(){
 	if(index==1){
-		mypic.src="sudarshan1.jpeg";
+		mypic.src="sudarshan.jpeg";
 		picindex.innerHTML="2/4";
 		index++;
 	}
@@ -82,14 +85,14 @@ function nextPic(){
 		index++;
 	}
 	else{
-		mypic.src="sudarshan.jpeg";
+		mypic.src="sudarshan1.jpeg";
 		picindex.innerHTML="1/4";
 		index=1;
 	}
 }
 function lastPic(){
     if(index==3){
-		mypic.src="sudarshan1.jpeg";
+		mypic.src="sudarshan.jpeg";
 		picindex.innerHTML="2/4";
 		index++;
 	}
@@ -104,7 +107,7 @@ function lastPic(){
 		index++;
 	}
 	else{
-		mypic.src="sudarshan.jpeg";
+		mypic.src="sudarshan1.jpeg";
 		picindex.innerHTML="1/4";
 		index=1;
 	}

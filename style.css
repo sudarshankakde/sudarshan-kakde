@@ -40,7 +40,7 @@ header{
     border-left: 3px solid #aebcb9;
     margin: 0 1vh;
     height: 100%;
-    padding:  0 100%;
+    padding:  0 0;
     left: 0px;
 }
 .change_text{
@@ -251,17 +251,6 @@ body { font-family: sans-serif; }
  color: #5bc0de;
 }
 
-  content: attr(title);
-  border:thin solid;
-  border-color:attr(title);
-  background-color:white;
-  position:absolute;
-  margin:0 1vh;
-  font-size:2vh;
-  padding:1vh 2vh;
-  border-radius:25px;
-  border-bottom-left-radius: 5px;
-}
 .slider>h2{
 	font-family:serif;
 	text-decoration: underline;
@@ -337,6 +326,52 @@ color:#5bc0de;
 z-index:777;
 box-shadow: 0vh 0vh 2vh 1vh black;
 }
+.myprojects-item{
+	height:75vh;
+}
 .index{
 	font-family:'lora',serif;
+}
+@media screen and (max-width: 480px) {
+	#next-pic{
+		left:92%;
+	}
+	#last-pic{
+		right:92%;
+	} 
+	.quote>h1{
+		font-size:3vh;
+	}
+	.myprojects-item{
+	height:50vh;
+	font-size:3vh;
+}
+	.myprojects-item>.quote>h1 , .myprojects-item>.quote>h3{
+		font-size:2vh;
+		margin-top:0;
+		margin-bottom:5px;
+	}
+	.myprojects-item>h1{
+		font-size:3vh;
+	}
+	#footer-img{
+	border:thin solid #5bc0de;
+	border-top-left-radius:0vh;
+	border-top-right-radius:0vh;
+	box-shadow: 1vh 1vh 20vh 5vh #5bc0de;
+	}
+}
+#back-to-top{
+	position:fixed;
+	right:5%;
+	bottom:5%;
+	z-index:999;
+	border:thin solid transparent;
+	border-radius:100%;
+	background-color:white;
+	box-shadow:0vh 0vh 7vh 2vh black;
+}
+#back-to-top>.bi{
+	padding: 0vh 2vh;
+	color:#5bc0de;
 }

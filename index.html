@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <nav class="mt-3">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
@@ -61,10 +61,10 @@
             <br>
             <div class="d-flex justify-content-center change_text">
                 <div class="item">
-                    I am &nbsp;
+                    I Am&nbsp;
                 </div>
                 <div class="item">
-                    <b id="changable_text"> coder </b>
+                    <b id="changable_text">a coder </b>
                 </div>
             </div>
         </div>
@@ -76,14 +76,20 @@
         </div>
         <br>
     </header>
-    <!-- about me -->
-    <div class="container mt-5 mb-5" id="about">
+    
+	<!--back-to-top-->
+	<a href="#home">
+	<div id="back-to-top">
+		<i class="bi bi-capslock-fill"></i>
+	</div></a> 
+	<!-- about me -->
+    <div class="container mt-5 mb-5" id="about" >
         <div class="row">
             <div class="col-lg-4 col-sm-4 col-12">
                 <div class="row">
                     <div class="col-12 mt-2">
 						<i class="fa fa-caret-left" aria-hidden="true" id="last-pic" onclick="lastPic()"></i>
-                        <img src="sudarshan.jpeg" alt="" class="img-fluid" id="my-pic">
+                        <img src="sudarshan1.jpeg" alt="" class="img-fluid" id="my-pic">
 						<i class="fa fa-caret-right" aria-hidden="true" id="next-pic" onclick="nextPic()"></i>
 						<b id="pic-index">1/4</b>
                     </div>
@@ -161,7 +167,7 @@
 	<h2 class="text-uppercase text-center  text-white">my projects.
 	</h2>
         <div class="carousel text-center bg-transparent" data-flickity='{ "autoPlay": 3000  , "wrapAround": true}'>
-            <div class="carousel-cell">
+            <div class="carousel-cell myprojects-item">
                 <h1>Anime Land</h1>
                 <a href="https://sudarshankakde.github.io/Anime_land/" target="_blank" rel="noopener noreferrer">
                     <img src="anime land.PNG" alt="Anime_land" class="img-fluid" title="Visit Anime_Land">
@@ -169,7 +175,7 @@
 				<br>
 				<b class="index">1/5</b>
             </div>
-            <div class="carousel-cell">
+            <div class="carousel-cell myprojects-item">
                 <h1>Farmy</h1>
                 <a href="https://sudarshankakde.github.io/Farmy/" target="_blank" rel="noopener noreferrer">
                     <img src="Farmy.PNG" alt="Farmy" class="img-fluid" title="Visit Farmy">
@@ -177,7 +183,7 @@
 				<br>
 				<b class="index">2/5</b>
             </div>
-            <div class="carousel-cell">
+            <div class="carousel-cell myprojects-item">
                 <h1>Wallpie</h1>
                 <a href="https://sudarshankakde.github.io/wellpie/" target="_blank" rel="noopener noreferrer">
                     <img src="wellpie.PNG" alt="wellpie" class="img-fluid" title="Visit wellpie">
@@ -185,7 +191,7 @@
 				<br>
 				<b class="index">3/5</b>
             </div>
-            <div class="carousel-cell">
+            <div class="carousel-cell myprojects-item">
                 <h1>Blogfest Concept </h1>
 
                 <a href="https://sudarshankakde.github.io/blogfest-concept/" target="_blank" rel="noopener noreferrer">
@@ -194,7 +200,7 @@
 				<br>
 				<b class="index">4/5</b>
             </div>
-            <div class="carousel-cell">
+            <div class="carousel-cell myprojects-item">
 				<div class="quote text-capitalize">
 				<a href="https://github.com/sudarshankakde" target="_blank" rel="noopener noreferrer">
                             <i class="bi bi-github" style="color: black; font-size:15vh;" ></i>
@@ -220,13 +226,13 @@
             </div>
         </div>
         <div class="row mt-3">
-            <div class="col-lg-4 col-sm-4 col-12">
+            <div class="col-lg-4 col-sm-4 col-12 text-center">
                 <img src="My Post (1).png" alt="" class="img-fluid">
             </div>
-            <div class="col-lg-4 col-sm-4 col-12">
+            <div class="col-lg-4 col-sm-4 col-12 text-center">
                 <img src="core.png" alt="" class="img-fluid">
             </div>
-            <div class="col-lg-4 col-sm-4 col-12">
+            <div class="col-lg-4 col-sm-4 col-12   text-center">
                 <img src="other.png" alt="" class="img-fluid">
             </div>
         </div>
