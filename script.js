@@ -10,6 +10,7 @@ function change_text() {
     }
     else if (i == 1) {
         text.innerHTML = "student.";
+		text.Style.fade
         i++;
     }
     else if (i == 2) {
@@ -58,4 +59,53 @@ function next() {
         inputbar.innerHTML = "Thank you! I'll contact you shortly.";
         nextTime = 0;
     }
+}
+
+
+var mypic= document.getElementById('my-pic');
+var picindex = document.getElementById('pic-index');
+var index=1;
+function nextPic(){
+	if(index==1){
+		mypic.src="sudarshan1.jpeg";
+		picindex.innerHTML="2/4";
+		index++;
+	}
+	else if(index==2){
+		mypic.src="sudarshan4.jpeg";
+		picindex.innerHTML="3/4";
+		index++;
+	}
+	else if(index==3){
+		mypic.src="sudarshan5.jpeg";
+		picindex.innerHTML="4/4";
+		index++;
+	}
+	else{
+		mypic.src="sudarshan.jpeg";
+		picindex.innerHTML="1/4";
+		index=1;
+	}
+}
+function lastPic(){
+    if(index==3){
+		mypic.src="sudarshan1.jpeg";
+		picindex.innerHTML="2/4";
+		index++;
+	}
+	else if(index==2){
+		mypic.src="sudarshan4.jpeg";
+		picindex.innerHTML="3/4";
+		index++;
+	}
+	else if(index==1){
+		mypic.src="sudarshan5.jpeg";
+		picindex.innerHTML="4/4";
+		index++;
+	}
+	else{
+		mypic.src="sudarshan.jpeg";
+		picindex.innerHTML="1/4";
+		index=1;
+	}
 }

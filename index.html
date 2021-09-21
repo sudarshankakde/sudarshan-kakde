@@ -24,7 +24,12 @@
     <link rel="stylesheet" type="text/css" href="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/css/imdbRating.css">
 	<!--- flickity css --->	
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
+	<!-- bootstrap-icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!--google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -38,7 +43,7 @@
                     <a class="nav-link" href="#skills">SKills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#social">Social</a>
+                    <a class="nav-link" href="#myprojects">my projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#coffeewithme" tabindex="-1" aria-disabled="true">coffee with me</a>
@@ -77,7 +82,10 @@
             <div class="col-lg-4 col-sm-4 col-12">
                 <div class="row">
                     <div class="col-12 mt-2">
-                        <img src="sudarshan.jpeg" alt="" class="img-fluid">
+						<i class="fa fa-caret-left" aria-hidden="true" id="last-pic" onclick="lastPic()"></i>
+                        <img src="sudarshan.jpeg" alt="" class="img-fluid" id="my-pic">
+						<i class="fa fa-caret-right" aria-hidden="true" id="next-pic" onclick="nextPic()"></i>
+						<b id="pic-index">1/4</b>
                     </div>
                 </div>
                 <div class="row mb-5">
@@ -149,25 +157,33 @@
         </div>
     </div>
     <!-- slider -->
-    <div class="container-fluid">
-        <div class="carousel text-center" data-flickity='{ "wrapAround": true }'>
+    <div class="container-fluid slider bg-info" id="myprojects">
+	<h2 class="text-uppercase text-center  text-white">my projects.
+	</h2>
+        <div class="carousel text-center bg-transparent" data-flickity='{ "autoPlay": 3000  , "wrapAround": true}'>
             <div class="carousel-cell">
                 <h1>Anime Land</h1>
                 <a href="https://sudarshankakde.github.io/Anime_land/" target="_blank" rel="noopener noreferrer">
                     <img src="anime land.PNG" alt="Anime_land" class="img-fluid" title="Visit Anime_Land">
                 </a>
+				<br>
+				<b class="index">1/5</b>
             </div>
             <div class="carousel-cell">
                 <h1>Farmy</h1>
                 <a href="https://sudarshankakde.github.io/Farmy/" target="_blank" rel="noopener noreferrer">
                     <img src="Farmy.PNG" alt="Farmy" class="img-fluid" title="Visit Farmy">
                 </a>
+				<br>
+				<b class="index">2/5</b>
             </div>
             <div class="carousel-cell">
                 <h1>Wallpie</h1>
                 <a href="https://sudarshankakde.github.io/wellpie/" target="_blank" rel="noopener noreferrer">
                     <img src="wellpie.PNG" alt="wellpie" class="img-fluid" title="Visit wellpie">
                 </a>
+				<br>
+				<b class="index">3/5</b>
             </div>
             <div class="carousel-cell">
                 <h1>Blogfest Concept </h1>
@@ -175,14 +191,24 @@
                 <a href="https://sudarshankakde.github.io/blogfest-concept/" target="_blank" rel="noopener noreferrer">
                     <img src="blogfest.PNG" alt="blogfest-concept" class="img-fluid" title="Visit blogfest-concept">
                 </a>
+				<br>
+				<b class="index">4/5</b>
             </div>
             <div class="carousel-cell">
-                <h1>Trasition Details</h1>
-                <a href="https://sudarshankakde.github.io/transaction-details/" target="_blank"
-                    rel="noopener noreferrer">
-                    <img src="trasition-details.PNG" alt="trasition-details" class="img-fluid"
-                        title="Visit trasition-details">
+				<div class="quote text-capitalize">
+				<a href="https://github.com/sudarshankakde" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-github" style="color: black; font-size:15vh;" ></i>
                 </a>
+                <h1 >" There are many more !"</h1>
+				<h3><b style="color:white">Check out all my projects on my GITHUB account</b></h3>
+				<a href="https://github.com/sudarshankakde" target="_blank" rel="noopener noreferrer">
+							<button class="btn btn-outline-light text-uppercase" title="visit to my github"> visit now</button>
+                </a>
+				 
+				</div>
+				<br>
+				<b class="index">5/5</b>
+            </div>
             </div>
         </div>
     </div>
@@ -205,7 +231,7 @@
             </div>
         </div>
         <div class="row text-center text-uppercase mt-5 mb-5">
-            <div class="col-12">
+            <div class="col-12 mb-5">
                 <h4 style="opacity: 0.8;">
                     Dowload my Resume
                 </h4>
@@ -216,27 +242,53 @@
             </div>
         </div>
     </div>
-    <!-- slider -->
-    <div class="container-fluid">
-        <div class="carousel text-center" data-flickity='{ "wrapAround": true }' >
-            <div class="carousel-cell bg-dark">
-                <img src="ever failed.jpg" alt="" class="img-fluid " width="100%">
-                <h1></h1>
-            </div>
-            <div class="carousel-cell bg-dark">
-                <img src="albertQ.png" alt="" class="img-fluid " width="100%">
-            </div>
-            <div class="carousel-cell bg-dark">
-                <img src="winstonQ.png" alt="" class="img-fluid " width="100%">
+    <!-- quotes slider -->
+    <div class="container-fluid slider bg-dark">
+	<h2 class="text-uppercase text-center text-white">Inspiring Quotes.</h2>
+        <div class="carousel text-center bg-transparent" data-flickity='{ "autoPlay": 3000  , "wrapAround": true}' >
+		<div class="carousel-cell bg-dark">
+			<div class="quote text-capitalize">
+				 <img src="steve-jobs.jpg">
+                 <h1>" Because the people who are crazy enough to think they can
+                 change the world are the ones who do. "</h1>
+				<h3>by <b>Steve Jobs</b></h3>
+				</div>
 
             </div>
+			 <div class="carousel-cell bg-dark">
+			<div class="quote text-capitalize">
+				<img src="bill-gates.jpg">
+				<h1>
+			" Success is a lousy teacher. It seduces smart people into 
+thinking they can't lose."</h1>
+				<h3>by <b>Bill Gates</b></h3>
+			</div>
+			
+			</div>
+            
             <div class="carousel-cell bg-dark">
-                <img src="jimQ.png" alt="" class="img-fluid " width="100%">
+			<div class="quote text-capitalize">
+				 <img src="linus-torvalds.jpg">
+                 <h1 >" See, you not only have to be a good coder to create system
+like Linux, you have to be a sneaky bastard too."</h1>
+				 <h3>by <b>Linus Torvalds</b></h3>
+				</div>
+               
             </div>
+            <div class="carousel-cell bg-dark">
+                <div class="quote text-capitalize">
+				 <img src="larry-page.jpg">
+                 <h1>" If you're changing the world, you're working on important things.
+You're excited to get up in the morning. "</h1>
+				<h3>by <b>Larry Page</b></h3>
+
+				</div>
+            </div>
+           
+			</div>
         </div>
-    </div>
     <!-- coffe with me  -->
-    <div class="container mt-5 mb-2">
+    <div class="container mt-5 mb-2 bg-light" id="coffeewithme-container">
         <div class="row text-center">
             <div class="col-12 mt-5" id="coffeewithme">
                 <h1>Coffee with me.</h1>
@@ -245,15 +297,16 @@
         </div>
         <div class="row">
             <div class="col-12 mt-5 mb-5 ">
-                <div id="input">
-                    <label for="input" id="inputlable">write a message for me below</label>
+                <div id="input" >
+                    <label for="input" id="inputlable" style="color:#0275d8">write a message for me below</label>
                     <br>
-                    <div class="inputbar" id="inputbar">
+                    <div class="inputbar"  id="inputbar">
                         <input type="text">
-                        <i class="bi bi-arrow-right" onclick="next()" id="nextIcon"></i>
+                        <i class="bi bi-arrow-right " onclick="next()" id="nextIcon" style="color:#0275d8"></i>
+						
                     </div>
                     <div class="progress" style="height: 1vh;">
-                        <div class="progress-bar " role="progressbar" style="width: 0%;" aria-valuenow="25"
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 0%;" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100" id="progress"></div>
                     </div>
                 </div>
@@ -270,7 +323,7 @@
                     <p style="word-spacing: 3px;">Feel free to copy. If you need any help,<br> ping me !</p>
                 </div>
                 <div class="col-lg-4 col-sm-4 col-12 mt-3 mt-lg-0 mt-sm-0">
-                    <div class="title aling-center" style="color: #40b0bd; font-size: 7vh;">
+                    <div class="title aling-center" style="color:blue; font-size: 7vh;">
                         sudarshan kakde
                     </div>
                 </div>
@@ -286,7 +339,7 @@
                             <i class="bi bi-linkedin" style="color:blue" title="linkedin"></i>
                         </a>
                         <a href="mailto:sudarshankakde1111@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <i class="bi bi-envelope" style="color: darkred;" title="envelope"></i>
+                            <i class="bi bi-envelope" style="color: darkred;" title="mail"></i>
                         </a>
                         <a href="https://github.com/sudarshankakde" target="_blank" rel="noopener noreferrer">
                             <i class="bi bi-github" style="color: black;" title="github"></i>
@@ -302,16 +355,11 @@
             </div>
             <div class="row text-center">
                 <div class="col-12">
-                    <img src="footer_imge.jpg" alt="" class="img-fluid">
+                    <img src="footer_imge.jpg" alt="" class="img-fluid" id="footer-img">
                 </div>
             </div>
         </div>
-    </footer>
-
-
-
-
-	   
+    </footer> 
     <script src="script.js"></script>
 	<!--- flickity js --->	
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
